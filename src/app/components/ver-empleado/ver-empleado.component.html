@@ -1,0 +1,19 @@
+<div class="title">
+    <h1>Información del Empleado</h1>
+</div>
+<div *ngIf="empleado != null" class="container1">
+    <mat-card class="card">
+        <mat-card-title> {{ empleado.nombreComp }} </mat-card-title>
+        <mat-card-content>
+            <p><strong>Correo electrónico:</strong> {{ empleado.correo }} </p>
+            <p><strong>Edad:</strong> {{ empleado.edad }} </p>
+            <p><strong>Sexo:</strong> {{ empleado.sexo }} </p>
+            <p><strong>Puesto/Cargo:</strong> {{ empleado.puesto }} </p>
+            <p><strong>Sueldo (en dólares):</strong> ${{ empleado.sueldo }} </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button routerLink="/listEmpleados" mat-raised-button>ATRÁS</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
