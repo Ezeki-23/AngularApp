@@ -7,7 +7,7 @@ import { Empleado } from '../interfaces/empleado';
   providedIn: 'root'
 })
 export class EmpleadoService {
-  private myAppUrl: string = 'http://localhost:5287/';
+  private myAppUrl: string = 'http://ezekiel024-001-site1.btempurl.com/';
   private myApiUrl: string = 'api/Empleado/';
 
   constructor(private http: HttpClient) { }
